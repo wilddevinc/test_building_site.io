@@ -8,22 +8,23 @@
         .highlight-area {
             width: 150px;
             height: 150px;
-            border: 2px solid transparent;
+            border: 20px solid transparent;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            transition: border-color 0.3s;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
         
         .highlight-area:hover {
             border-color: black;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="highlight-area" onclick="window.location.href='floor.html'"></div>
     <h1>Welcome to the Main Page</h1>
-    <p>Hover over the highlighted area and click to go to the second page.</p>
+    <p>Hover over the highlighted area and click to go to the floor page.</p>
 </body>
 </html>
