@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <style>
-        /* Стили для изображения, чтобы оно занимало всю страницу */
-        img {
-            width: 100%;
-            height: auto;
+        .highlight-area {
+            width: 150px;
+            height: 150px;
+            border: 2px solid transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: border-color 0.3s;
+        }
+        
+        .highlight-area:hover {
+            border-color: black;
         }
     </style>
 </head>
 <body>
-    <!-- Добавляем изображение здания и делаем его ссылкой -->
-    <a href="floor.html">
-        <img src="main_page_screen.jpg" alt="Building Image">
-    </a>
+    <div class="highlight-area" onclick="window.location.href='floor_schema.html'"></div>
+    <h1>Welcome to the Main Page</h1>
+    <p>Hover over the highlighted area and click to go to the second page.</p>
 </body>
 </html>
