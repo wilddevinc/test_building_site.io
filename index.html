@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+        }
         .highlight-area {
             width: 150px;
             height: 150px;
@@ -15,16 +23,21 @@
             transform: translate(-50%, -50%);
             transition: border-color 0.3s, box-shadow 0.3s;
         }
-        
         .highlight-area:hover {
             border-color: black;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    <div class="highlight-area" onclick="window.location.href='floor.html'"></div>
-    <h1>Welcome to the Main Page</h1>
-    <p>Hover over the highlighted area and click to go to the floor page.</p>
+    <div class="container">
+        <img src="main_page_screen_jpg" alt="Main Page Image">
+        <div class="highlight-area" onclick="window.location.href='floor.html'"></div>
+    </div>
 </body>
 </html>
