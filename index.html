@@ -21,11 +21,12 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            transition: border-color 0.3s, box-shadow 0.3s;
+            transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
         }
         .highlight-area:hover {
             border-color: black;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            transform: translate(-50%, -50%) scale(1.2); /* Увеличение при наведении */
         }
         img {
             display: block;
@@ -36,7 +37,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="main_page_screen.jpg" alt="Main Page Image">
+        <img src="main_page_screen_jpg" alt="Main Page Image">
         <div class="highlight-area" onclick="window.location.href='floor.html'"></div>
     </div>
 </body>
